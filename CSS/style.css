@@ -277,11 +277,11 @@ nav .hidden-paragraph .number{
 }
 .transport-type .transport-type-content{
     display: flex;
+    justify-content: space-between;
 }
 .transport-type .transport-type-content .transport-type-one{
     background-color: var(--white-color);
     width: 25%;
-    margin-left: 100px;
     margin-top: 40px;
     padding: 60px 40px 40px;
     border-radius: 90px 20px 20px 20px;
@@ -414,6 +414,7 @@ footer .polygon .footer-data .footer-data-div{
     padding-right: 15px;
     width: 270px;
     border-radius: 30px;
+    padding: 5px;
 }
 footer .polygon .footer-data .footer-data-div span{
     display: block;
@@ -464,6 +465,28 @@ footer .polygon .footer-list ul li a:hover{
 
 
 /* Responsive */
+@media (min-width:1199px) and (max-width: 1400px){
+    .background-content .content-image{
+        position: relative;
+        margin: 30px auto 0;
+    }
+    .background-content .content-image .top{
+        position: absolute;
+        right: -320px;
+        bottom: -290px;
+    }
+    .background-content .content-image .middle{
+        position: absolute;
+        z-index: 1;
+        top: 10px;
+        right: -270px;
+    }
+    .background-content .content-image .bottom{
+        position: absolute;
+        top: 155px;
+        right: -150px;
+    }
+}
 @media (max-width: 1199px ){
     header .contact-data{
         display: flex;
@@ -577,13 +600,6 @@ footer .polygon .footer-list ul li a:hover{
         margin-top: 20px;
         padding: 5px;
     }
-    footer .polygon .footer-data .different-height{
-        padding: 0px 10px;
-        margin-right: 10px;
-    }
-    footer .polygon .footer-data .different-height p{
-        font-size: 16px;
-    }
     footer .polygon .footer-list{
         border-radius: 25px;
         width: 80%;
@@ -654,7 +670,11 @@ footer .polygon .footer-list ul li a:hover{
        flex-wrap: wrap;
     }
     footer .polygon .footer-data .footer-data-div{
-        margin-left: 0px;
+        width: 280px;
+    } 
+    footer .polygon .footer-data .different{
+        margin-right: -20px;
+        margin-left: 20px;
     }
     footer .polygon .footer-list{
         width: 90%;
@@ -712,6 +732,10 @@ footer .polygon .footer-list ul li a:hover{
     footer .polygon .footer-data .footer-data-div{
         width: 250px;
     }
+    footer .polygon .footer-data .different{
+        margin-right: -20px;
+        margin-left: 20px;
+    }
 }
 
 @media (max-width: 576px){
@@ -741,8 +765,12 @@ footer .polygon .footer-list ul li a:hover{
         top: 155px;
         right: 180px;
     }
+    .transport-service .transport-service-image .top{
+        width: 90%;
+    }
     .transport-service .transport-service-image .bottom{
         left: 0%;
+        top: 60%;
     }
     .transport-type .transport-type-content .transport-type-one{
         width: 80%;
@@ -763,7 +791,6 @@ footer .polygon .footer-list ul li a:hover{
         margin-left: 20px;
     }
 }
-
 
 
 
